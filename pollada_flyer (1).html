@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollada Pro Salud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .flyer {
+            background: white;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .health-badge {
+            background: white;
+            color: #ff6b35;
+            padding: 10px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .main-image {
+            background: linear-gradient(to bottom, #fff5e6 0%, #ffe0b3 100%);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .lady-illustration {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .lady-illustration img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .call-to-action {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+        }
+        
+        .includes {
+            background: #f7931e;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .includes h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ff6b35;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <h1>🍗 POLLADA 🍗</h1>
+            <div class="health-badge">PRO SALUD</div>
+        </div>
+        
+        <div class="main-image">
+            <div class="lady-illustration">
+                <img src="https://i.imgur.com/your-uploaded-image.jpg" alt="Señora con taper de emergencia" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'500\' height=\'400\'%3E%3Crect fill=\'%23ff6b35\' width=\'500\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'white\'%3EColoca aquí tu imagen%3C/text%3E%3C/svg%3E'">
+            </div>
+        </div>
+        
+        <div class="call-to-action">
+            ¡AGARRA TU TAPER!
+        </div>
+        
+        <div class="includes">
+            <h2>✨ INCLUYE ✨</h2>
+            <div class="items">
+                <div class="item">🥡 TAPER</div>
+                <div class="item">🌶️ AJÍ</div>
+                <div class="item">🍗 POLLADA</div>
+                <div class="item">🥔 PAPA</div>
+                <div class="item" style="grid-column: 1 / -1;">🌽 MOTE</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
